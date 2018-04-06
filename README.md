@@ -61,6 +61,6 @@ Para simplificar o desenvolvimento, vamos retirar a complexidade da ficha de tre
 
 
 ## Dúvidas
-Se surgir alguma dúvida, consulte as  [perguntas feitas anteriormente](https://github.com/BodytechCompany/backend-challenge/labels/question).
+Se surgir alguma dúvida, consulte as  [perguntas feitas anteriormente](https://github.com/BodytechCompany/backend-challenge-jr/labels/question).
 
-Caso não encontre a sua resposta, sinta-se à vontade para  [abrir uma issue](https://github.com/BodytechCompany/backend-challenge/issues/new)  =]
+Caso não encontre a sua resposta, sinta-se à vontade para  [abrir uma issue](https://github.com/BodytechCompany/backend-challenge-jr/issues/new)  =]
