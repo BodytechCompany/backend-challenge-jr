@@ -5,7 +5,7 @@ Olá! Se você chegou até aqui é porque foi aprovado(a) na nossa primeira etap
 
 Ótimo! E Parabéns!!! :clap::clap::clap:
 
-Bom, você deve lembrar do nosso estudo de caso, certo? O nosso desafio vai usá-lo como base, mas de uma forma bem simplificada. :wink:
+Bom, você deve lembrar do nosso [estudo de caso](https://github.com/BodytechCompany/backend-challenge-jr/blob/master/case_study.md), certo? O nosso desafio vai usá-lo como base, mas de uma forma bem simplificada. :wink:
 
 O desafio consiste em criar uma API para o acesso e alteração da ficha de treino do cliente através do nosso aplicativo (Android e iOS).
 Para simplificar o desenvolvimento, vamos retirar a complexidade da ficha de treino poder ter mais de uma série associada (A, B e/ ou C) e entender, como regra de negócio, que a ficha é apenas uma lista com exercícios/ equipamentos associada a um cliente e professor.
