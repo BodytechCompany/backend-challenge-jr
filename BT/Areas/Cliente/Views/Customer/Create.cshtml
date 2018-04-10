@@ -1,0 +1,44 @@
+﻿@model BT.Areas.Cliente.ViewModel.ClienteViewModel
+
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Cliente/Views/Shared/_LayoutCliente.cshtml";
+}
+
+<h2>Adicione um Cliente </h2>
+
+<div align="center">
+    @using (Html.BeginForm("create", "Customer", FormMethod.Post))
+    {
+        <table class="table">
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.cliente.clie_nm_nome)
+                </td>
+
+                <td>
+                    @Html.TextBoxFor(model => model.cliente.clie_nm_nome)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.cliente.clie_nr_matricula)
+                </td>
+
+                <td>
+                    @Html.TextBoxFor(model => model.cliente.clie_nr_matricula)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+
+                <td>
+                    <input type="submit" value="Save" class="btn btn-default" />
+                    <a class="btn btn-danger"
+                       href="@Url.Action("Index","Customer")">Cancel</a>
+                </td>
+            </tr>
+        </table>
+    }
+</div>

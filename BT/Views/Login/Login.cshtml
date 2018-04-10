@@ -1,0 +1,41 @@
+﻿@model BT.Models.Login
+
+@{
+    ViewBag.Title = "Login";
+}
+<h2>Login</h2>
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))
+{
+    //cria a tag do formulário
+    @Html.AntiForgeryToken() // previne o ataque CSRF
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    if (@ViewBag.Message != null)
+    {
+        <div style="border:1px solid red">
+            @ViewBag.Message
+        </div>
+    }
+    <table>
+        <tr>
+            <td>@Html.LabelFor(model => model.Matricula_Usuario)</td>
+            <td>@Html.TextBoxFor(model => model.Matricula_Usuario)</td>
+            <td>@Html.ValidationMessageFor(model => model.Matricula_Usuario, "", new { @class = "text-danger" })</td>
+        </tr>
+        <tr>
+            <td> @Html.LabelFor(a => a.Senha)</td>
+            <td> @Html.PasswordFor(a => a.Senha) </td>
+            <td> @Html.ValidationMessageFor(a => a.Senha, "", new { @class = "text-danger" }) </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Login" />
+            </td>
+            <td></td>
+        </tr>
+    </table>
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,39 @@
+﻿
+<div style="padding-top:20px">
+    <h2>Index </h2>
+
+        <div align = "center" >
+        <a href = "@Url.Action("Create ","Customer ")" > Add New Customer < / a > <br/> 
+            <br />
+    <table cellpadding = "2"
+    class = "table"
+    cellspacing = "2"
+    border = "1" >
+    <tr class = "btn-primary" >
+    <th > CustomerId</th> 
+        <th> Name</th>
+        <th>Address</th>
+        <th>MobileNo</th> 
+        <th > Birthdate</th> 
+        <th > EmailId</th> 
+            <th > Action</th> 
+                </tr>
+            @foreach (var Cust in ViewBag.listCustomers)
+            {
+                <tr class = "btn-success" >
+        <td >@Cust.CustomerId</td> 
+                    <td >@Cust.Name</td> 
+                    <td >@Cust.Address</td> 
+                    <td >@Cust.MobileNo</td> 
+                    <td >@Cust.Birthdate.ToString("dd/MM/yyyy") </td> 
+                    <td >@Cust.EmailId</td> 
+                    <td ><a onclick = "return confirm('Do you want to Delete?')"
+        href = "@Url.Action("Delete ","Customer ",new {id= Cust.CustomerId})">Delete
+</a> ||<a href = "@Url.Action("Edit ","Customer ",new {id= Cust.CustomerId})">Edit</a> 
+                    </td>
+        </tr>
+        } 
+    </table> 
+            </div>
+
+</div>

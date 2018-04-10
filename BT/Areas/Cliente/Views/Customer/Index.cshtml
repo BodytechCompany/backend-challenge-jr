@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Cliente/Views/Shared/_LayoutCliente.cshtml";
+}
+<div style="padding-top:20px">
+    <h2>Index </h2>
+
+    <div align="center">
+        <a href="@Url.Action("Create","Customer")"> Add New Customer </a> <br />
+        <br />
+        <table cellpadding="2"
+               class="table"
+               cellspacing="2"
+               border="1">
+            <tr class="btn-primary">
+                <th> ID do Cliente</th>
+                <th> Nome</th>
+                <th>Matricula</th>
+                <th> Ações</th>
+            </tr>
+            @foreach (var Cust in ViewBag.listCustomers)
+            {
+                <tr class="btn-success">
+                    <td>@Cust.clie_id</td>
+                    <td>@Cust.clie_nm_nome</td>
+                    <td>@Cust.clie_nr_matricula</td>
+
+                    <td>
+                        <a onclick="return confirm('Do you want to Delete?')"
+                           href="@Url.Action("Delete","Customer",new {id= Cust.clie_id})">Delete</a>
+                        ||<a href="@Url.Action("Edit","Customer",new {id= Cust.clie_id})">Edit</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,66 @@
+﻿@model BusinessLibrary.Entity.Exercicio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Exercicio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente.clie_nm_nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.clie_nm_nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.professor.prof_nm_nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.professor.prof_nm_nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exer_nr_ordem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exer_nr_ordem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exer_nm_nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exer_nm_nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exer_nm_repeticao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exer_nm_repeticao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exer_db_carga)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exer_db_carga)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Exer_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

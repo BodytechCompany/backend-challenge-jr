@@ -1,0 +1,131 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\ApplicationInsights.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\csc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\vbc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\BT.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\BT.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\BT.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\BusinessLibrary.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\WebGrease.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\BusinessLibrary.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\obj\Debug\BT.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\obj\Debug\BT.Migrations.Initial.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\obj\Debug\BT.Migrations.Initial2.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\obj\Debug\BT.Migrations.Initial1.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\obj\Debug\BT.Migrations.Initial3.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\obj\Debug\BT.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\obj\Debug\BT.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BT\obj\Debug\BT.pdb
+C:\Users\User\Downloads\barbosa project\BT\obj\Debug\BT.dll
+C:\Users\User\Downloads\barbosa project\BT\obj\Debug\BT.pdb
+C:\Users\User\Downloads\barbosa project\BT\bin\ApplicationInsights.config
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\csc.exe
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\vbc.exe
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Downloads\barbosa project\BT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Downloads\barbosa project\BT\bin\BT.dll.config
+C:\Users\User\Downloads\barbosa project\BT\bin\BT.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\BT.pdb
+C:\Users\User\Downloads\barbosa project\BT\bin\Antlr3.Runtime.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\BusinessLibrary.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\EntityFramework.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.AI.Web.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.ApplicationInsights.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\Newtonsoft.Json.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.Helpers.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.Mvc.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.Optimization.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.Razor.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.WebPages.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\WebGrease.dll
+C:\Users\User\Downloads\barbosa project\BT\bin\BusinessLibrary.pdb
+C:\Users\User\Downloads\barbosa project\BT\bin\EntityFramework.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.AI.Web.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.ApplicationInsights.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.Helpers.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.Mvc.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.Optimization.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.Razor.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.WebPages.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Downloads\barbosa project\BT\bin\Antlr3.Runtime.pdb
+C:\Users\User\Downloads\barbosa project\BT\bin\Newtonsoft.Json.xml
+C:\Users\User\Downloads\barbosa project\BT\obj\Debug\BT.csprojResolveAssemblyReference.cache
+C:\Users\User\Downloads\barbosa project\BT\obj\Debug\BT.Migrations.Initial.resources
+C:\Users\User\Downloads\barbosa project\BT\obj\Debug\BT.Migrations.Initial2.resources
+C:\Users\User\Downloads\barbosa project\BT\obj\Debug\BT.Migrations.Initial1.resources
+C:\Users\User\Downloads\barbosa project\BT\obj\Debug\BT.Migrations.Initial3.resources
+C:\Users\User\Downloads\barbosa project\BT\obj\Debug\BT.csproj.GenerateResource.Cache

@@ -1,0 +1,85 @@
+﻿ 
+<div style="padding-top:20px">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="well">
+            <!--Table to capture username and password-->
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="primary">
+                        <th colspan="2">
+                            User Login
+                            @*<a href="Register.html" class="btn btn-primary pull-right">
+                                Register
+                            </a>*@
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Usename</td>
+                        <td>
+                            <input type="text" id="txtUsername" placeholder="Username" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="password" id="txtPassword"
+                                   placeholder="Password" />
+                        </td>
+                    </tr>
+                    <tr class="primary">
+                        <td colspan="2">
+                            <input id="btnLogin" class="btn btn-primary" type="button"
+                                   value="Login" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Bootstrap alert to display error message if the login fails-->
+            <div id="divError" class="alert alert-danger collapse">
+                <a id="linkClose" href="#" class="close">&times;</a>
+                <div id="divErrorText"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#linkClose').click(function () {
+                $('#divError').hide('fade');
+            });
+
+            $('#btnLogin').click(function () {
+                $.ajax({
+                    // Post username, password & the grant type to /token
+                    url: '/token',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: {
+                        username: $('#txtUsername').val(),
+                        password: $('#txtPassword').val(),
+                        grant_type: 'password'
+                    },
+                    // When the request completes successfully, save the
+                    // access token in the browser session storage and
+                    // redirect the user to Data.html page. We do not have
+                    // this page yet. So please add it to the
+                    // EmployeeService project before running it
+                    success: function (response) {
+                        sessionStorage.setItem("accessToken", response.access_token);
+                        window.location.href = "Data.html";
+                    },
+                    // Display errors if any in the Bootstrap alert <div>
+                    error: function (jqXHR) {
+                        $('#divErrorText').text(jqXHR.responseText);
+                        $('#divError').show('fade');
+                    }
+                });
+            });
+        });
+    </script>
+</div>
