@@ -159,12 +159,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\AreaCliente\Controllers\" />
-    <Folder Include="Areas\AreaCliente\Models\" />
-    <Folder Include="Areas\AreaCliente\Views\Shared\" />
-    <Folder Include="Areas\AreaProfessor\Controllers\" />
-    <Folder Include="Areas\AreaProfessor\Models\" />
-    <Folder Include="Areas\AreaProfessor\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -172,8 +166,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\AreaCliente\AreaClienteAreaRegistration.cs" />
-    <Compile Include="Areas\AreaProfessor\AreaProfessorAreaRegistration.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
     <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
@@ -203,7 +195,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\ClientesController.cs" />
-    <Compile Include="Controllers\ExerciciosController.cs" />
+    <Compile Include="Controllers\FichaTreinosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProfessorsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -249,8 +241,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Areas\AreaCliente\Views\web.config" />
-    <Content Include="Areas\AreaProfessor\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

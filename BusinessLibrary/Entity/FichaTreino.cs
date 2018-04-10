@@ -8,7 +8,7 @@ using System.Web;
 
 namespace BusinessLibrary.Entity
 {
-    public class Exercicio
+    public class FichaTreino
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Exer_id { get; set; }

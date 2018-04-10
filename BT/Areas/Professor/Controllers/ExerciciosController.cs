@@ -29,7 +29,7 @@ namespace BT.Areas.Professor.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Exercicio exercicio = db.Exercicios.Find(id);
+            FichaTreino exercicio = db.Exercicios.Find(id);
             if (exercicio == null)
             {
                 return HttpNotFound();
@@ -50,7 +50,7 @@ namespace BT.Areas.Professor.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Exer_id,exer_nr_ordem,clie_id,exer_nm_nome,exer_nm_repeticao,exer_db_carga,prof_id")] Exercicio exercicio)
+        public ActionResult Create([Bind(Include = "Exer_id,exer_nr_ordem,clie_id,exer_nm_nome,exer_nm_repeticao,exer_db_carga,prof_id")] FichaTreino exercicio)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +71,7 @@ namespace BT.Areas.Professor.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Exercicio exercicio = db.Exercicios.Find(id);
+            FichaTreino exercicio = db.Exercicios.Find(id);
             if (exercicio == null)
             {
                 return HttpNotFound();
@@ -86,7 +86,7 @@ namespace BT.Areas.Professor.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Exer_id,exer_nr_ordem,clie_id,exer_nm_nome,exer_nm_repeticao,exer_db_carga,prof_id")] Exercicio exercicio)
+        public ActionResult Edit([Bind(Include = "Exer_id,exer_nr_ordem,clie_id,exer_nm_nome,exer_nm_repeticao,exer_db_carga,prof_id")] FichaTreino exercicio)
         {
             if (ModelState.IsValid)
             {
@@ -106,7 +106,7 @@ namespace BT.Areas.Professor.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Exercicio exercicio = db.Exercicios.Find(id);
+            FichaTreino exercicio = db.Exercicios.Find(id);
             if (exercicio == null)
             {
                 return HttpNotFound();
@@ -119,7 +119,7 @@ namespace BT.Areas.Professor.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Exercicio exercicio = db.Exercicios.Find(id);
+            FichaTreino exercicio = db.Exercicios.Find(id);
             db.Exercicios.Remove(exercicio);
             db.SaveChanges();
             return RedirectToAction("Index");

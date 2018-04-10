@@ -17,7 +17,7 @@ namespace BtTraining.Models
         public DbSet<Login> Logins { get; set; }
         public DbSet<TipoMatricula> TipoMatriculas { get; set; }
 
-        public System.Data.Entity.DbSet<BusinessLibrary.Entity.Exercicio> Exercicios { get; set; }
+        public System.Data.Entity.DbSet<BusinessLibrary.Entity.FichaTreino> Exercicios { get; set; }
 
         public System.Data.Entity.DbSet<BusinessLibrary.Entity.Cliente> Clientes { get; set; }
 

@@ -51,7 +51,7 @@
   <ItemGroup>
     <Compile Include="Context\BTServiceContext.cs" />
     <Compile Include="Entity\Cliente.cs" />
-    <Compile Include="Entity\Exercicio.cs" />
+    <Compile Include="Entity\FichaTreino.cs" />
     <Compile Include="Entity\Login.cs" />
     <Compile Include="Entity\professor.cs" />
     <Compile Include="Entity\TipoMatricula.cs" />

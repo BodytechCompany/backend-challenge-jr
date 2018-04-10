@@ -13,23 +13,23 @@ using BusinessLibrary.Entity;
 
 namespace BtTraining.Controllers
 {
-    public class ExerciciosController : ApiController
+    public class FichaTreinosController : ApiController
     {
         private BTServiceContext db = new BTServiceContext();
 
         // GET: api/Exercicios
-        public IQueryable<Exercicio> Getexercicios()
+        public IQueryable<FichaTreino> Getexercicios()
         {
-            var exercicios = db.Exercicios.Include(e => e.Cliente).Include(e => e.professor);
+            var exercicios = db.FichaTreinos.Include(e => e.Cliente).Include(e => e.professor);
             return exercicios;
         }
 
         // GET: api/Exercicios/5
-        [ResponseType(typeof(Exercicio))]
+        [ResponseType(typeof(FichaTreino))]
         public IHttpActionResult GetExercicio(int id)
         {
             //Exercicio exercicio = db.Exercicios.Find(id);
-            var exercicio = db.Exercicios
+            var exercicio = db.FichaTreinos
                 .Include(e => e.Cliente)
                 .Include(e => e.professor);
             var exercicioobj = exercicio.FirstOrDefault(e => e.Exer_id == id);
@@ -44,7 +44,7 @@ namespace BtTraining.Controllers
 
         // PUT: api/Exercicios/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutExercicio(int id, Exercicio exercicio)
+        public IHttpActionResult PutExercicio(int id, FichaTreino exercicio)
         {
             if (!ModelState.IsValid)
             {
@@ -78,32 +78,32 @@ namespace BtTraining.Controllers
         }
 
         // POST: api/Exercicios
-        [ResponseType(typeof(Exercicio))]
-        public IHttpActionResult PostExercicio(Exercicio exercicio)
+        [ResponseType(typeof(FichaTreino))]
+        public IHttpActionResult PostExercicio(FichaTreino exercicio)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.Exercicios.Add(exercicio);
+            db.FichaTreinos.Add(exercicio);
             db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = exercicio.Exer_id }, exercicio);
         }
 
         // DELETE: api/Exercicios/5
-        [ResponseType(typeof(Exercicio))]
+        [ResponseType(typeof(FichaTreino))]
         public IHttpActionResult DeleteExercicio(int id)
         {
-            Exercicio exercicio = db.Exercicios.Find(id);
+            FichaTreino exercicio = db.FichaTreinos.Find(id);
 
             if (exercicio == null)
             {
                 return NotFound();
             }
 
-            db.Exercicios.Remove(exercicio);
+            db.FichaTreinos.Remove(exercicio);
             db.SaveChanges();
 
             return Ok(exercicio);
@@ -122,7 +122,7 @@ namespace BtTraining.Controllers
 
         private bool ExercicioExists(int id)
         {
-            return db.Exercicios.Count(e => e.Exer_id == id) > 0;
+            return db.FichaTreinos.Count(e => e.Exer_id == id) > 0;
         }
     }
 }

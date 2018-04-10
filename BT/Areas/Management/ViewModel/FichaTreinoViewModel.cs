@@ -7,7 +7,7 @@ namespace BT.Areas.Management.ViewModel
 {
     public class FichaTreinoViewModel
     {
-        public BusinessLibrary.Entity.Exercicio exercicio { get; set; }
+        public BusinessLibrary.Entity.FichaTreino fichaTreino { get; set; }
 
     }
 }

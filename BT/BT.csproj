@@ -202,6 +202,10 @@
     <Compile Include="Migrations\201804090340525_Initial3.Designer.cs">
       <DependentUpon>201804090340525_Initial3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804101215201_AddBlogUrl.cs" />
+    <Compile Include="Migrations\201804101215201_AddBlogUrl.Designer.cs">
+      <DependentUpon>201804101215201_AddBlogUrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BTContext.cs" />
     <Compile Include="Models\TipoMatricula.cs" />
@@ -282,8 +286,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Usuarios\Create.cshtml" />
@@ -332,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804090340525_Initial3.resx">
       <DependentUpon>201804090340525_Initial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804101215201_AddBlogUrl.resx">
+      <DependentUpon>201804101215201_AddBlogUrl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -10,16 +10,16 @@
 <h2>Adicione uma ficha </h2>
 
 <div align="center">
-    @using (Html.BeginForm("create", "Customer", FormMethod.Post))
+    @using (Html.BeginForm("create", "FichaTreino", FormMethod.Post))
     {
         <table class="table">
             <tr class="btn-default">
                 <td>
-                    @Html.LabelFor(model => model.exercicio.Cliente.clie_nm_nome)
+                    @Html.LabelFor(model => model.fichaTreino.Cliente.clie_nm_nome)
                 </td>
 
                 <td>
-                    @Html.TextBoxFor(model => model.exercicio.Cliente.clie_nm_nome)
+                    @Html.TextBoxFor(model => model.fichaTreino.Cliente.clie_nm_nome)
                     @*<div class="form-group">
                     @Html.LabelFor(model => model.exercicio.clie_id, "clie_id", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
@@ -31,58 +31,58 @@
             </tr>
             <tr>
                 <td>
-                    @Html.LabelFor(model => model.exercicio.Cliente.clie_nr_matricula)
+                    @Html.LabelFor(model => model.fichaTreino.Cliente.clie_nr_matricula)
                 </td>
 
                 <td>
-                    @Html.TextBoxFor(model => model.exercicio.Cliente.clie_nr_matricula)
+                    @Html.TextBoxFor(model => model.fichaTreino.Cliente.clie_nr_matricula)
                 </td>
             </tr>
             <tr>
                 <td>
-                    @Html.LabelFor(model => model.exercicio.professor.prof_nm_nome)
+                    @Html.LabelFor(model => model.fichaTreino.professor.prof_nm_nome)
                 </td>
 
                 <td>
-                    @Html.TextBoxFor(model => model.exercicio.professor.prof_nm_nome)
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    @Html.LabelFor(model => model.exercicio.exer_nr_ordem)
-                </td>
-
-                <td>
-                    @Html.TextBoxFor(model => model.exercicio.exer_nr_ordem)
+                    @Html.TextBoxFor(model => model.fichaTreino.professor.prof_nm_nome)
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    @Html.LabelFor(model => model.exercicio.exer_nm_nome)
+                    @Html.LabelFor(model => model.fichaTreino.exer_nr_ordem)
                 </td>
 
                 <td>
-                    @Html.TextBoxFor(model => model.exercicio.exer_nm_nome)
+                    @Html.TextBoxFor(model => model.fichaTreino.exer_nr_ordem)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.fichaTreino.exer_nm_nome)
+                </td>
+
+                <td>
+                    @Html.TextBoxFor(model => model.fichaTreino.exer_nm_nome)
                 </td>
             </tr>
             <tr>
                 <td>
-                    @Html.LabelFor(model => model.exercicio.exer_nm_repeticao)
+                    @Html.LabelFor(model => model.fichaTreino.exer_nm_repeticao)
                 </td>
 
                 <td>
-                    @Html.TextBoxFor(model => model.exercicio.exer_nm_repeticao)
+                    @Html.TextBoxFor(model => model.fichaTreino.exer_nm_repeticao)
                 </td>
             </tr>
             <tr>
                 <td>
-                    @Html.LabelFor(model => model.exercicio.exer_db_carga)
+                    @Html.LabelFor(model => model.fichaTreino.exer_db_carga)
                 </td>
 
                 <td>
-                    @Html.TextBoxFor(model => model.exercicio.exer_db_carga)
+                    @Html.TextBoxFor(model => model.fichaTreino.exer_db_carga)
                 </td>
             </tr>
             <tr>

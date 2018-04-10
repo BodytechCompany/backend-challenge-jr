@@ -14,7 +14,7 @@ namespace BT.Areas.Cliente.Models
 
         private string Base_API_Module = "Exercicios";
 
-        public IEnumerable<BusinessLibrary.Entity.Exercicio> findAll()
+        public IEnumerable<BusinessLibrary.Entity.FichaTreino> findAll()
         {
             try
             {
@@ -24,7 +24,7 @@ namespace BT.Areas.Cliente.Models
                 HttpResponseMessage response = client.GetAsync(Base_API_Module).Result;
 
                 if (response.IsSuccessStatusCode)
-                    return   response.Content.ReadAsAsync<IEnumerable<BusinessLibrary.Entity.Exercicio>>().Result;
+                    return   response.Content.ReadAsAsync<IEnumerable<BusinessLibrary.Entity.FichaTreino>>().Result;
                
                 return null;
             }
@@ -33,7 +33,7 @@ namespace BT.Areas.Cliente.Models
                 return null;
             }
         }
-        public BusinessLibrary.Entity.Exercicio find(int id)
+        public BusinessLibrary.Entity.FichaTreino find(int id)
         {
             try
             {
@@ -43,7 +43,7 @@ namespace BT.Areas.Cliente.Models
                 HttpResponseMessage response = client.GetAsync(Base_API_Module + "/" + id).Result;
 
                 if (response.IsSuccessStatusCode)
-                    return response.Content.ReadAsAsync<BusinessLibrary.Entity.Exercicio>().Result;
+                    return response.Content.ReadAsAsync<BusinessLibrary.Entity.FichaTreino>().Result;
                 return null;
             }
             catch
@@ -51,7 +51,7 @@ namespace BT.Areas.Cliente.Models
                 return null;
             }
         }
-        public bool Create(BusinessLibrary.Entity.Exercicio exercicio)
+        public bool Create(BusinessLibrary.Entity.FichaTreino exercicio)
         {
             try
             {
@@ -66,7 +66,7 @@ namespace BT.Areas.Cliente.Models
                 return false;
             }
         }
-        public bool Edit(BusinessLibrary.Entity.Exercicio exercicio)
+        public bool Edit(BusinessLibrary.Entity.FichaTreino exercicio)
         {
             try
             {

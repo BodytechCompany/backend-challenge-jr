@@ -27,7 +27,7 @@ namespace BT.Areas.Management.Controllers
         public ActionResult Create(FichaTreinoViewModel cvm)
         {
             FichaTreinoClient CC = new FichaTreinoClient();
-            CC.Create(cvm.exercicio);
+            CC.Create(cvm.fichaTreino);
             return RedirectToAction("Index");
         }
 
@@ -42,14 +42,14 @@ namespace BT.Areas.Management.Controllers
         {
             FichaTreinoClient CC = new FichaTreinoClient();
             FichaTreinoViewModel CVM = new FichaTreinoViewModel();
-            CVM.exercicio = CC.find(id);
+            CVM.fichaTreino = CC.find(id);
             return View("Edit", CVM);
         }
         [HttpPost]
         public ActionResult Edit(FichaTreinoViewModel CVM)
         {
             FichaTreinoClient CC = new FichaTreinoClient();
-            CC.Edit(CVM.exercicio);
+            CC.Edit(CVM.fichaTreino);
             return RedirectToAction("Index");
         }
     }
