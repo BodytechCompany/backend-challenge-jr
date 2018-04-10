@@ -1,0 +1,101 @@
+﻿@model BT.Areas.Professor.ViewModel.FichaTreinoViewModel
+
+
+    @{
+        ViewBag.Title = "Edit";
+        Layout = "~/Areas/Professor/Views/Shared/_Layout.cshtml";
+
+    }
+
+    <h2>Edit </h2>
+
+    <div align="center" width="500px">
+        @using (Html.BeginForm("Edit", "FichaTreino", FormMethod.Post))
+        {
+            <table class="table">
+                <tr class="btn-default">
+                    <td>
+                        @Html.LabelFor(model => model.fichaTreino.Cliente.clie_nm_nome)
+                    </td>
+
+                    <td>
+                        @Html.TextBoxFor(model => model.fichaTreino.Cliente.clie_nm_nome)
+                        @*<div class="form-group">
+                    @Html.LabelFor(model => model.exercicio.clie_id, "clie_id", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownList("clie_id", null, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.exercicio.clie_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>*@
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.fichaTreino.Cliente.clie_nr_matricula)
+                    </td>
+
+                    <td>
+                        @Html.TextBoxFor(model => model.fichaTreino.Cliente.clie_nr_matricula)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.fichaTreino.professor.prof_nm_nome)
+                    </td>
+
+                    <td>
+                        @Html.TextBoxFor(model => model.fichaTreino.professor.prof_nm_nome)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.fichaTreino.exer_nr_ordem)
+                    </td>
+
+                    <td>
+                        @Html.TextBoxFor(model => model.fichaTreino.exer_nr_ordem)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.fichaTreino.exer_nm_nome)
+                    </td>
+
+                    <td>
+                        @Html.TextBoxFor(model => model.fichaTreino.exer_nm_nome)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.fichaTreino.exer_nm_repeticao)
+                    </td>
+
+                    <td>
+                        @Html.TextBoxFor(model => model.fichaTreino.exer_nm_repeticao)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.fichaTreino.exer_db_carga)
+                    </td>
+
+                    <td>
+                        @Html.TextBoxFor(model => model.fichaTreino.exer_db_carga)
+                    </td>
+                </tr>
+              
+                <tr>
+                    <td></td>
+
+                    <td>
+                        <input type="submit" value="Save" class="btn btn-default" />
+                        <a class="btn btn-danger"
+                           href="@Url.Action("Index","FichaTreino")">Back</a>
+                        @Html.HiddenFor(model => model.fichaTreino.Exer_id)
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>

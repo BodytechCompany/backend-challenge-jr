@@ -5,9 +5,9 @@ using System.Web;
 
 namespace BT.Areas.Cliente.ViewModel
 {
-    public class ClienteViewModel
+    public class FichaTreinoViewModel
     {
-        public BusinessLibrary.Entity.Cliente cliente { get; set; }
+        public BusinessLibrary.Entity.FichaTreino fichaTreino { get; set; }
 
     }
 }

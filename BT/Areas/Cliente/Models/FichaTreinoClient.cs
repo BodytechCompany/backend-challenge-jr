@@ -8,24 +8,22 @@ using System.Net.Http.Headers;
 
 namespace BT.Areas.Cliente.Models
 {
-    public class ExercicioClient
+    public class FichaTreinoClient
     {
-        private string Base_URL = "https://bttraining.azurewebsites.net/api/";
+     private string Base_URL = "https://bttraining.azurewebsites.net/api/";
+        private string Base_API_Module = "FichaTreinos";
 
-        private string Base_API_Module = "Exercicios";
-
-        public IEnumerable<BusinessLibrary.Entity.FichaTreino> findAll()
+        public BusinessLibrary.Entity.FichaTreino findByMatricula_id(int Matricula_id)
         {
             try
             {
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(Base_URL);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = client.GetAsync(Base_API_Module).Result;
+                HttpResponseMessage response = client.GetAsync(Base_API_Module + "/" + Matricula_id).Result;
 
                 if (response.IsSuccessStatusCode)
-                    return   response.Content.ReadAsAsync<IEnumerable<BusinessLibrary.Entity.FichaTreino>>().Result;
-               
+                    return response.Content.ReadAsAsync<BusinessLibrary.Entity.FichaTreino>().Result;
                 return null;
             }
             catch

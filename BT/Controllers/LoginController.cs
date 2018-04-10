@@ -16,29 +16,7 @@ namespace BT.Controllers
     {
         private BTContext db = new BTContext();
 
-        // GET: Logins
         public ActionResult Index()
-        {
-            if (Session["usuarioLogadoID"] != null)
-            {
-                if (Session["tipoMatriculaLogado"].ToString() == "Professor")
-                {
-                    return RedirectToAction("Professor/Home");
-                }
-                else if (Session["tipoMatriculaLogado"].ToString() == "Cliente")
-                {
-                    return RedirectToAction("Cliente/Home");
-                }
-                return View();
-            }
-            else
-            {
-
-                return RedirectToAction("Login");
-            }
-
-        }
-        public ActionResult Login()
         {
             return View();
 
@@ -46,7 +24,7 @@ namespace BT.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(Login mu)
+        public ActionResult Index(Login mu)
         {
             // esta action trata o post (login)
 
@@ -60,17 +38,13 @@ namespace BT.Controllers
                     Session["Matricula_UsuarioLogado"] = v.Matricula_Usuario.ToString();
                     Session["tipoMatriculaLogado"] = v.tipoMatricula.Descricao.ToString();
 
-                    ViewBag.usuarioLogadoID = v.Id.ToString();
-                    ViewBag.Matricula_UsuarioLogado = v.Matricula_Usuario.ToString();
-                    ViewBag.tipoMatriculaLogado = v.tipoMatricula.Descricao.ToString();
-
                     if (Session["tipoMatriculaLogado"].ToString() == "Professor")
                     {
-                        return RedirectToAction("Home", "Professor");
+                        return RedirectToAction("FichaTreino", "Professor");
                     }
                     else if (Session["tipoMatriculaLogado"].ToString() == "Cliente")
                     {
-                        return RedirectToAction("Home", "Cliente");
+                        return RedirectToAction("FichaTreino", "Cliente");
                     }
                 }
             }
@@ -86,7 +60,7 @@ namespace BT.Controllers
         public ActionResult LogOff()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Login", "Login", new { area = "" });
+            return RedirectToAction("Login", "Index", new { area = "" });
         }
 
         // GET: Logins/Details/5
@@ -115,7 +89,7 @@ namespace BT.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Matricula_Usuario,Senha,Tipo_Matricula_id")] Login login)
+        public ActionResult Create([Bind(Include = "Matricula_Usuario,Senha,Tipo_Matricula_id")] Login login)
         {
             if (ModelState.IsValid)
             {
@@ -147,7 +121,7 @@ namespace BT.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Matricula_Usuario,Senha,Tipo_Matricula_id")] Login login)
+        public ActionResult Edit([Bind(Include = "Matricula_Usuario,Senha,Tipo_Matricula_id")] Login login)
         {
             if (ModelState.IsValid)
             {

@@ -42,6 +42,39 @@ namespace BtTraining.Controllers
             return Ok(exercicioobj);
         }
 
+        [ResponseType(typeof(FichaTreino))]
+        public IHttpActionResult GetFichaClienteMatric(int Matricula_id)
+        {
+            //Exercicio exercicio = db.Exercicios.Find(id);
+            var fichas = db.FichaTreinos
+                .Include(e => e.Cliente)
+                .Include(e => e.professor);
+            var fichaTreinoobj = fichas.FirstOrDefault(e => e.Cliente.clie_nr_matricula == Matricula_id);
+
+            if (fichas == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(fichaTreinoobj);
+        }
+        [ResponseType(typeof(FichaTreino))]
+        public IHttpActionResult GetFichaClienteNome(string cliente_nome)
+        {
+            //Exercicio exercicio = db.Exercicios.Find(id);
+            var fichas = db.FichaTreinos
+                .Include(e => e.Cliente)
+                .Include(e => e.professor);
+            var fichaTreinoobj = fichas.FirstOrDefault(e => e.Cliente.clie_nm_nome == cliente_nome);
+
+            if (fichas == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(fichaTreinoobj);
+        }
+
         // PUT: api/Exercicios/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutExercicio(int id, FichaTreino exercicio)

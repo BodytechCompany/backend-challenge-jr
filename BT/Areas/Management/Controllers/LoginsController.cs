@@ -9,118 +9,114 @@ using System.Web.Mvc;
 using BtTraining.Models;
 using BusinessLibrary.Entity;
 
-namespace BT.Areas.Professor.Controllers
+namespace BT.Areas.Management.Controllers
 {
-    public class ExerciciosController : Controller
+    public class LoginsController : Controller
     {
         private BTContext db = new BTContext();
 
-        // GET: Professor/Exercicios
+        // GET: Management/Logins
         public ActionResult Index()
         {
-            var exercicios = db.Exercicios.Include(e => e.Cliente).Include(e => e.professor);
-            return View(exercicios.ToList());
+            var logins = db.Logins.Include(l => l.tipoMatricula);
+            return View(logins.ToList());
         }
 
-        // GET: Professor/Exercicios/Details/5
+        // GET: Management/Logins/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            FichaTreino exercicio = db.Exercicios.Find(id);
-            if (exercicio == null)
+            Login login = db.Logins.Find(id);
+            if (login == null)
             {
                 return HttpNotFound();
             }
-            return View(exercicio);
+            return View(login);
         }
 
-        // GET: Professor/Exercicios/Create
+        // GET: Management/Logins/Create
         public ActionResult Create()
         {
-            ViewBag.clie_id = new SelectList(db.Clientes, "clie_id", "clie_nm_nome");
-            ViewBag.prof_id = new SelectList(db.Professors, "prof_id", "prof_nm_nome");
+            ViewBag.TipoMatricula_id = new SelectList(db.TipoMatriculas, "TipoMatricula_id", "Descricao");
             return View();
         }
 
-        // POST: Professor/Exercicios/Create
+        // POST: Management/Logins/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Exer_id,exer_nr_ordem,clie_id,exer_nm_nome,exer_nm_repeticao,exer_db_carga,prof_id")] FichaTreino exercicio)
+        public ActionResult Create([Bind(Include = "Id,Matricula_Usuario,Senha,TipoMatricula_id")] Login login)
         {
             if (ModelState.IsValid)
             {
-                db.Exercicios.Add(exercicio);
+                db.Logins.Add(login);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.clie_id = new SelectList(db.Clientes, "clie_id", "clie_nm_nome", exercicio.clie_id);
-            ViewBag.prof_id = new SelectList(db.Professors, "prof_id", "prof_nm_nome", exercicio.prof_id);
-            return View(exercicio);
+            ViewBag.TipoMatricula_id = new SelectList(db.TipoMatriculas, "TipoMatricula_id", "Descricao", login.TipoMatricula_id);
+            return View(login);
         }
 
-        // GET: Professor/Exercicios/Edit/5
+        // GET: Management/Logins/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            FichaTreino exercicio = db.Exercicios.Find(id);
-            if (exercicio == null)
+            Login login = db.Logins.Find(id);
+            if (login == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.clie_id = new SelectList(db.Clientes, "clie_id", "clie_nm_nome", exercicio.clie_id);
-            ViewBag.prof_id = new SelectList(db.Professors, "prof_id", "prof_nm_nome", exercicio.prof_id);
-            return View(exercicio);
+            ViewBag.TipoMatricula_id = new SelectList(db.TipoMatriculas, "TipoMatricula_id", "Descricao", login.TipoMatricula_id);
+            return View(login);
         }
 
-        // POST: Professor/Exercicios/Edit/5
+        // POST: Management/Logins/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Exer_id,exer_nr_ordem,clie_id,exer_nm_nome,exer_nm_repeticao,exer_db_carga,prof_id")] FichaTreino exercicio)
+        public ActionResult Edit([Bind(Include = "Id,Matricula_Usuario,Senha,TipoMatricula_id")] Login login)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(exercicio).State = EntityState.Modified;
+                db.Entry(login).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.clie_id = new SelectList(db.Clientes, "clie_id", "clie_nm_nome", exercicio.clie_id);
-            ViewBag.prof_id = new SelectList(db.Professors, "prof_id", "prof_nm_nome", exercicio.prof_id);
-            return View(exercicio);
+            ViewBag.TipoMatricula_id = new SelectList(db.TipoMatriculas, "TipoMatricula_id", "Descricao", login.TipoMatricula_id);
+            return View(login);
         }
 
-        // GET: Professor/Exercicios/Delete/5
+        // GET: Management/Logins/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            FichaTreino exercicio = db.Exercicios.Find(id);
-            if (exercicio == null)
+            Login login = db.Logins.Find(id);
+            if (login == null)
             {
                 return HttpNotFound();
             }
-            return View(exercicio);
+            return View(login);
         }
 
-        // POST: Professor/Exercicios/Delete/5
+        // POST: Management/Logins/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            FichaTreino exercicio = db.Exercicios.Find(id);
-            db.Exercicios.Remove(exercicio);
+            Login login = db.Logins.Find(id);
+            db.Logins.Remove(login);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

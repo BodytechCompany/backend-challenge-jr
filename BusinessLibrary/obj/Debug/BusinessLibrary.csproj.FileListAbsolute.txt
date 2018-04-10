@@ -16,4 +16,3 @@ C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\bin\Debug\En
 C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\obj\Debug\BusinessLibrary.dll
 C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
-C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\obj\Debug\BusinessLibrary.csprojResolveAssemblyReference.cache

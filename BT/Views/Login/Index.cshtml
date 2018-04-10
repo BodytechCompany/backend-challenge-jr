@@ -1,45 +1,41 @@
-﻿@model IEnumerable<BusinessLibrary.Entity.Login>
+﻿@model BusinessLibrary.Entity.Login
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Login";
 }
+<h2>Login</h2>
+@using (Html.BeginForm("Index", "Login", FormMethod.Post))
+{
+    //cria a tag do formulário
+    @Html.AntiForgeryToken() // previne o ataque CSRF
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Matricula_Usuario)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Senha)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.tipoMatricula)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Matricula_Usuario)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Senha)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.tipoMatricula)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
+    if (@ViewBag.Message != null)
+    {
+        <div style="border:1px solid red">
+            @ViewBag.Message
+        </div>
+    }
+    <table>
+        <tr>
+            <td>@Html.LabelFor(model => model.Matricula_Usuario)</td>
+            <td>@Html.TextBoxFor(model => model.Matricula_Usuario)</td>
+            <td>@Html.ValidationMessageFor(model => model.Matricula_Usuario, "", new { @class = "text-danger" })</td>
+        </tr>
+        <tr>
+            <td> @Html.LabelFor(a => a.Senha)</td>
+            <td> @Html.PasswordFor(a => a.Senha) </td>
+            <td> @Html.ValidationMessageFor(a => a.Senha, "", new { @class = "text-danger" }) </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Login" />
+            </td>
+            <td></td>
+        </tr>
+    </table>
 }
-
-</table>
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -6,23 +6,24 @@ using System.Web;
 using BusinessLibrary.Entity;
 using System.Net.Http.Headers;
 
-namespace BT.Areas.Cliente.Models
+namespace BT.Areas.Professor.Models
 {
-    public class ClienteClient
+    public class FichaTreinoClient
     {
-        private string Base_URL = "https://bttraining.azurewebsites.net/api/";
+     private string Base_URL = "https://bttraining.azurewebsites.net/api/";
+        private string Base_API_Module = "FichaTreinos";
 
-        public IEnumerable<BusinessLibrary.Entity.Cliente> findAll()
+        public IEnumerable<BusinessLibrary.Entity.FichaTreino> findAll()
         {
             try
             {
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(Base_URL);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = client.GetAsync("Clientes").Result;
+                HttpResponseMessage response = client.GetAsync(Base_API_Module).Result;
 
                 if (response.IsSuccessStatusCode)
-                    return   response.Content.ReadAsAsync<IEnumerable<BusinessLibrary.Entity.Cliente>>().Result;
+                    return   response.Content.ReadAsAsync<IEnumerable<BusinessLibrary.Entity.FichaTreino>>().Result;
                
                 return null;
             }
@@ -31,17 +32,17 @@ namespace BT.Areas.Cliente.Models
                 return null;
             }
         }
-        public BusinessLibrary.Entity.Cliente find(int id)
+        public BusinessLibrary.Entity.FichaTreino find(int id)
         {
             try
             {
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(Base_URL);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = client.GetAsync("Clientes/" + id).Result;
+                HttpResponseMessage response = client.GetAsync(Base_API_Module + "/" + id).Result;
 
                 if (response.IsSuccessStatusCode)
-                    return response.Content.ReadAsAsync<BusinessLibrary.Entity.Cliente>().Result;
+                    return response.Content.ReadAsAsync<BusinessLibrary.Entity.FichaTreino>().Result;
                 return null;
             }
             catch
@@ -49,14 +50,14 @@ namespace BT.Areas.Cliente.Models
                 return null;
             }
         }
-        public bool Create(BusinessLibrary.Entity.Cliente cliente)
+        public bool Create(BusinessLibrary.Entity.FichaTreino exercicio)
         {
             try
             {
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(Base_URL);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = client.PostAsJsonAsync("Clientes", cliente).Result;
+                HttpResponseMessage response = client.PostAsJsonAsync(Base_API_Module, exercicio).Result;
                 return response.IsSuccessStatusCode;
             }
             catch
@@ -64,14 +65,14 @@ namespace BT.Areas.Cliente.Models
                 return false;
             }
         }
-        public bool Edit(BusinessLibrary.Entity.Cliente cliente)
+        public bool Edit(BusinessLibrary.Entity.FichaTreino exercicio)
         {
             try
             {
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(Base_URL);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = client.PutAsJsonAsync("Clientes/" + cliente.clie_id, cliente).Result;
+                HttpResponseMessage response = client.PutAsJsonAsync(Base_API_Module + "/" + exercicio.Exer_id, exercicio).Result;
                 return response.IsSuccessStatusCode;
             }
             catch
@@ -86,7 +87,7 @@ namespace BT.Areas.Cliente.Models
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(Base_URL);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = client.DeleteAsync("Clientes/" + id).Result;
+                HttpResponseMessage response = client.DeleteAsync(Base_API_Module + "/" + id).Result;
                 return response.IsSuccessStatusCode;
             }
             catch
