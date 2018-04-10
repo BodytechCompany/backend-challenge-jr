@@ -46,8 +46,7 @@ namespace BT.Controllers
         public ActionResult Login(Login mu)
         {
             // esta action trata o post (login)
-            if (ModelState.IsValid) //verifica se é válido
-            {
+            
                 try
                 {
                     using ( db )
@@ -74,8 +73,7 @@ namespace BT.Controllers
 
                     ViewBag.Message = ex.Message;
                 }
-               
-            }
+           
             return View(mu);
         }
 

@@ -38,17 +38,44 @@ Para simplificar o desenvolvimento, vamos retirar a complexidade da ficha de tre
 
 ## Requisitos
  - Escolha livre da linguagem para desenvolvimento
+ 
+ +ASP .NET MVC C#
+
  - Escolha livre do framework para desenvolvimento
+ 
+ +Javascript,bootstrap,identity
+
  - Escolha livre para efetuar a persistência dos dados (BD, JSON, XML, ...)
+ 
+ +BD em Azure, JSON
+
  - Gestão de dependências via gerenciador de pacote
+ 
+ +nuget
+
  - Prazo de 4 (quatro) dias corridos
 
 
 ## Documentação
  - No README do projeto explique:
 	 - Funcionamento e arquitetura da solução.
-	 - Passos para execução do projeto.
+	 
+	 usuario acesso o sistema atreves do link https://btfit.azurewebsites.net/
+	ao efetuar o login e identificado se o usuario é cliente ou professor e será direcionado para a area espicifica com as acoes correspondentes.
+	
+	arquitetura da solução.
 
+	esta aplicação foi desenvolvida Utilizando a linguagem C# .NET framework, arquitetura MVC, com a camada de model, view and controler e a mesma esta alocada no Azure para disponibilização WEB.
+	O app esta consumindo o web API pra realização de suas transações.
+	foi criada projeto separado onde estão alocados os objetos, interfaces e contexto para separação da camada logica da aplicação para maior segurança nas operações.
+	o WEB API também desenvolvido em .net tecnologia microsoft, e disponibilizada no Azure para consumo.
+
+
+	 - Passos para execução do projeto.
+	
+	acessar o link https://btfit.azurewebsites.net/
+	inserir Matricula e senha = 080420181
+	
 
 ## Diferencial
  - API RestFull
