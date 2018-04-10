@@ -190,7 +190,7 @@ C:\Users\User\Documents\GitHub\backend-challenge-jr\BT\obj\Debug\BT.Migrations.I
 C:\Users\User\Documents\GitHub\backend-challenge-jr\BT\obj\Debug\BT.Migrations.Initial2.resources
 C:\Users\User\Documents\GitHub\backend-challenge-jr\BT\obj\Debug\BT.Migrations.Initial1.resources
 C:\Users\User\Documents\GitHub\backend-challenge-jr\BT\obj\Debug\BT.Migrations.Initial3.resources
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BT\obj\Debug\BT.Migrations.AddBlogUrl.resources
 C:\Users\User\Documents\GitHub\backend-challenge-jr\BT\obj\Debug\BT.csproj.GenerateResource.Cache
 C:\Users\User\Documents\GitHub\backend-challenge-jr\BT\obj\Debug\BT.dll
 C:\Users\User\Documents\GitHub\backend-challenge-jr\BT\obj\Debug\BT.pdb
-C:\Users\User\Documents\GitHub\backend-challenge-jr\BT\obj\Debug\BT.Migrations.AddBlogUrl.resources

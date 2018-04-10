@@ -1,4 +1,4 @@
-﻿@model IEnumerable<BT.Models.Login>
+﻿@model IEnumerable<BusinessLibrary.Entity.Login>
 
 @{
     ViewBag.Title = "Index";
@@ -18,7 +18,7 @@
             @Html.DisplayNameFor(model => model.Senha)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Tipo_Matricula_id)
+            @Html.DisplayNameFor(model => model.tipoMatricula)
         </th>
         <th></th>
     </tr>
@@ -32,7 +32,7 @@
             @Html.DisplayFor(modelItem => item.Senha)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Tipo_Matricula_id)
+            @Html.DisplayFor(modelItem => item.tipoMatricula)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

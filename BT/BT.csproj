@@ -170,7 +170,7 @@
     <Compile Include="Areas\Cliente\Models\ClienteClient.cs" />
     <Compile Include="Areas\Management\Controllers\CustomerController.cs" />
     <Compile Include="Areas\Management\Controllers\FichaTreinoController.cs" />
-    <Compile Include="Areas\Management\Controllers\LoginsController.cs" />
+    <Compile Include="Areas\Management\Controllers\LogintestController.cs" />
     <Compile Include="Areas\Management\Controllers\TipoMatriculasController.cs" />
     <Compile Include="Areas\Management\ManagementAreaRegistration.cs" />
     <Compile Include="Areas\Management\Models\ClienteClient.cs" />
@@ -208,8 +208,6 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BTContext.cs" />
-    <Compile Include="Models\TipoMatricula.cs" />
-    <Compile Include="Models\Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -236,14 +234,13 @@
     <Content Include="Areas\Management\Views\TipoMatriculas\Details.cshtml" />
     <Content Include="Areas\Management\Views\TipoMatriculas\Edit.cshtml" />
     <Content Include="Areas\Management\Views\TipoMatriculas\Index.cshtml" />
-    <Content Include="Areas\Management\Views\Logins\Create.cshtml" />
-    <Content Include="Areas\Management\Views\Logins\Delete.cshtml" />
-    <Content Include="Areas\Management\Views\Logins\Details.cshtml" />
-    <Content Include="Areas\Management\Views\Logins\Edit.cshtml" />
-    <Content Include="Areas\Management\Views\Logins\Index.cshtml" />
+    <Content Include="Areas\Management\Views\Logintest\Create.cshtml" />
+    <Content Include="Areas\Management\Views\Logintest\Delete.cshtml" />
+    <Content Include="Areas\Management\Views\Logintest\Details.cshtml" />
+    <Content Include="Areas\Management\Views\Logintest\Edit.cshtml" />
+    <Content Include="Areas\Management\Views\Logintest\Index.cshtml" />
     <Content Include="Areas\Cliente\Views\Shared\_LayoutCliente.cshtml" />
     <Content Include="Areas\Professor\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Professor\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Professor\Views\Exercicios\Create.cshtml" />
     <Content Include="Areas\Professor\Views\Exercicios\Delete.cshtml" />
     <Content Include="Areas\Professor\Views\Exercicios\Details.cshtml" />
@@ -263,6 +260,8 @@
     <Content Include="Areas\Management\Views\FichaTreino\Create.cshtml" />
     <Content Include="Areas\Management\Views\FichaTreino\Edit.cshtml" />
     <Content Include="Areas\Management\Views\FichaTreino\Index.cshtml" />
+    <Content Include="Areas\Professor\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Professor\Views\Shared\_LoginPartial.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

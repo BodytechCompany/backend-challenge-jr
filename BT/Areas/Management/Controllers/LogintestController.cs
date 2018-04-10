@@ -6,12 +6,12 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using BT.Models;
 using BtTraining.Models;
+using BusinessLibrary.Entity;
 
 namespace BT.Areas.Management.Controllers
 {
-    public class LoginsController : Controller
+    public class LogintestController : Controller
     {
         private BTContext db = new BTContext();
 

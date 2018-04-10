@@ -6,8 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using BT.Models;
+using BusinessLibrary.Entity;
 using BtTraining.Models;
+using System.Web.Security;
 
 namespace BT.Controllers
 {
@@ -40,44 +41,53 @@ namespace BT.Controllers
         public ActionResult Login()
         {
             return View();
+
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Login(Login mu)
         {
             // esta action trata o post (login)
-            
-                try
+
+            try
+            {
+                var logins = db.Logins.Include(l => l.tipoMatricula);
+                var v = logins.Where(a => a.Matricula_Usuario.Equals(mu.Matricula_Usuario) && a.Senha.Equals(mu.Senha)).FirstOrDefault();
+                if (v != null)
                 {
-                    using ( db )
+                    Session["usuarioLogadoID"] = v.Id.ToString();
+                    Session["Matricula_UsuarioLogado"] = v.Matricula_Usuario.ToString();
+                    Session["tipoMatriculaLogado"] = v.tipoMatricula.Descricao.ToString();
+
+                    ViewBag.usuarioLogadoID = v.Id.ToString();
+                    ViewBag.Matricula_UsuarioLogado = v.Matricula_Usuario.ToString();
+                    ViewBag.tipoMatriculaLogado = v.tipoMatricula.Descricao.ToString();
+
+                    if (Session["tipoMatriculaLogado"].ToString() == "Professor")
                     {
-                        var v = db.Logins.Where(a => a.Matricula_Usuario.Equals(mu.Matricula_Usuario) && a.Senha.Equals(mu.Senha)).FirstOrDefault();
-                        if (v != null)
-                        {
-                            Session["usuarioLogadoID"] = v.Id.ToString();
-                            Session["Matricula_UsuarioLogado"] = v.Matricula_Usuario.ToString();
-                            Session["tipoMatriculaLogado"] = v.tipoMatricula.ToString();
-                            if (Session["tipoMatriculaLogado"].ToString() == "Professor")
-                            {
-                                return RedirectToAction("Professor/Home");
-                            }
-                            else if (Session["tipoMatriculaLogado"].ToString() == "Cliente")
-                            {
-                                return RedirectToAction("Cliente/Home");
-                            }
-                        }
+                        return RedirectToAction("Home", "Professor");
+                    }
+                    else if (Session["tipoMatriculaLogado"].ToString() == "Cliente")
+                    {
+                        return RedirectToAction("Home", "Cliente");
                     }
                 }
-                catch (Exception ex)
-                {
+            }
+            catch (Exception ex)
+            {
 
-                    ViewBag.Message = ex.Message;
-                }
-           
+                ViewBag.Message = ex.Message;
+            }
+
             return View(mu);
         }
 
-
+        public ActionResult LogOff()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login", "Login", new { area = "" });
+        }
 
         // GET: Logins/Details/5
         public ActionResult Details(int? id)
