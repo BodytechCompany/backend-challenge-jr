@@ -33,7 +33,7 @@ Para simplificar o desenvolvimento, vamos retirar a complexidade da ficha de tre
  1. Efetue o **fork** deste projeto para a sua conta do GitHub.
  2. Implemente o desafio da **API** apresentado acima.
  3. Após finalizar o desafio crie um **Pull Request**.
- 4. Você deverá apresentar a sua solução para o nosso CTO Ninja.
+ 4. Você deverá apresentar a sua solução para o nosso Time de TI.
 
 
 ## Requisitos
