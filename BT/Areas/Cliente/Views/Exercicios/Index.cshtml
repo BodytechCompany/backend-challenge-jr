@@ -1,0 +1,64 @@
+﻿@model IEnumerable<BusinessLibrary.Entity.Exercicio>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Cliente/Views/Shared/_LayoutCliente.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cliente.clie_nm_nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.professor.prof_nm_nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.exer_nr_ordem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.exer_nm_nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.exer_nm_repeticao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.exer_db_carga)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente.clie_nm_nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.professor.prof_nm_nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.exer_nr_ordem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.exer_nm_nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.exer_nm_repeticao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.exer_db_carga)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Exer_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Exer_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Exer_id })
+        </td>
+    </tr>
+}
+
+</table>

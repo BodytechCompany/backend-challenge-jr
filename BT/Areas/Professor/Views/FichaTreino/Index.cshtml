@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Professor/Views/Shared/_Layout.cshtml";
+}
+<div style="padding-top:20px">
+    <h2>Fichas de Treino </h2>
+
+    <div align="center">
+        <a href="@Url.Action("Create","FichaTreino")"> Add nova Ficha </a> <br />
+        <br />
+        <div class="table-responsive">
+            <table cellpadding="2"
+                   class="table"
+                   cellspacing="2"
+                   border="1">
+                <tr class="btn-primary">
+                    <th> Cliente</th>
+                    <th>professor</th>
+                    <th> Ordem</th>
+                    <th> Exercicio</th>
+                    <th>Repeticao</th>
+                    <th>Carga</th>
+                    <th> Ações</th>
+                </tr>
+                @foreach (var Cust in ViewBag.listFichaTreinos)
+            {
+                    <tr class="success">
+                        <td>@Cust.Cliente.clie_nm_nome</td>
+                        <td>@Cust.professor.prof_nm_nome</td>
+                        <td>@Cust.exer_nr_ordem</td>
+                        <td>@Cust.exer_nm_nome</td>
+                        <td>@Cust.exer_nm_repeticao</td>
+                        <td>@Cust.exer_db_carga</td>
+
+                        <td>
+                            <a class="btn btn-danger" onclick="return confirm('Do you want to Delete?')"
+                               href="@Url.Action("Delete","FichaTreino",new {id= Cust.Exer_id})">Delete</a>
+                            ||<a class="btn btn-default" href="@Url.Action("Edit","FichaTreino",new {id= Cust.Exer_id})">Edit</a>
+                        </td>
+                    </tr>
+            }
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

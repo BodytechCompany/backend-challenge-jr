@@ -1,0 +1,18 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BusinessLibrary\bin\Debug\BusinessLibrary.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BusinessLibrary\bin\Debug\BusinessLibrary.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BusinessLibrary\bin\Debug\BusinessLibrary.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BusinessLibrary\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BusinessLibrary\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BusinessLibrary\obj\Debug\BusinessLibrary.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\bin\Debug\BusinessLibrary.dll.config
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\bin\Debug\BusinessLibrary.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\bin\Debug\BusinessLibrary.pdb
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\obj\Debug\BusinessLibrary.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BusinessLibrary\obj\Debug\BusinessLibrary.pdb

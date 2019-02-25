@@ -1,0 +1,134 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\ApplicationInsights.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\csc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\vbc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\BtTraining.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\BtTraining.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\BtTraining.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\BusinessLibrary.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Http.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\WebGrease.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\BusinessLibrary.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Http.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\obj\Debug\BtTraining_API.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\obj\Debug\BtTraining.Migrations.Initial.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\obj\Debug\BtTraining_API.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\obj\Debug\BtTraining.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BtTraining\BtTraining\obj\Debug\BtTraining.pdb
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\obj\Debug\BtTraining_API.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\obj\Debug\BtTraining.Migrations.Initial.resources
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\obj\Debug\BtTraining_API.csproj.GenerateResource.Cache
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\obj\Debug\BtTraining.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\obj\Debug\BtTraining.pdb
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\ApplicationInsights.config
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\csc.exe
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\vbc.exe
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\BtTraining.dll.config
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\BtTraining.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\BtTraining.pdb
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Antlr3.Runtime.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\BusinessLibrary.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\EntityFramework.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.AI.Web.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.ApplicationInsights.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Newtonsoft.Json.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Net.Http.Formatting.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Helpers.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Http.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Http.WebHost.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Mvc.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Optimization.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Razor.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.WebPages.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\WebGrease.dll
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\BusinessLibrary.pdb
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\EntityFramework.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.AI.Web.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.ApplicationInsights.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Newtonsoft.Json.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Helpers.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Http.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Http.WebHost.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Mvc.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Optimization.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.Razor.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.WebPages.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Documents\GitHub\backend-challenge-jr\BtTraining\bin\Antlr3.Runtime.pdb

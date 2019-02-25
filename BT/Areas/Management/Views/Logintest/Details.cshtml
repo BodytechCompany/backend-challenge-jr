@@ -1,0 +1,42 @@
+﻿@model BusinessLibrary.Entity.Login
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Login</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tipoMatricula.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipoMatricula.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Matricula_Usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Matricula_Usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Senha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Senha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
