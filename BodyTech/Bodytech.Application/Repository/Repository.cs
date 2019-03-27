@@ -5,6 +5,9 @@ using System.Web;
 
 namespace Bodytech.Application.Repository
 {
+    /// <summary>
+    /// Classe do Repository
+    /// </summary>
     public interface IRepository<T> where T : class
     {
         IEnumerable<T> Get();

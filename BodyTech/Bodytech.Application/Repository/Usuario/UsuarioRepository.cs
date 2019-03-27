@@ -32,7 +32,7 @@ namespace Bodytech.Application.Repository.Usuario
         {
             var usuario = Context.TB_USUARIOS.SingleOrDefault(x => x.USUARIO_ID == Id);
             if (usuario == null)
-                throw new Exception("Usuario não encontrado.");
+                throw new Exception(ExceptionMessages.UsuarioNaoEncontrado);
 
             this.Context.TB_USUARIOS.Remove(usuario);
             Context.SaveChanges();
@@ -42,7 +42,7 @@ namespace Bodytech.Application.Repository.Usuario
         {
             var usuario = Context.TB_USUARIOS.SingleOrDefault(x => x.USUARIO_ID == Id);
             if (usuario == null)
-                throw new Exception("Usuario não encontrado.");
+                throw new Exception(ExceptionMessages.UsuarioNaoEncontrado);
 
             return usuario;
         }
@@ -58,7 +58,7 @@ namespace Bodytech.Application.Repository.Usuario
         {
             var usuario = Context.TB_USUARIOS.SingleOrDefault(x => x.USUARIO_ID == entity.USUARIO_ID);
             if (usuario == null)
-                throw new Exception("Usuário não encontrado.");
+                throw new Exception(ExceptionMessages.UsuarioNaoEncontrado);
 
             usuario.DS_NOME = entity.DS_NOME;
             usuario.DS_USERNAME = entity.DS_USERNAME;
@@ -90,13 +90,13 @@ namespace Bodytech.Application.Repository.Usuario
         public TB_USUARIO FindByUsernameAndPassword(string username, string password)
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
-                throw new SegurancaException("Usuario não encontrado.", new Exception($"Não foi encontrado nenhum registro com os seguintes dados: {username}"));
+                throw new SegurancaException(ExceptionMessages.UsuarioNaoEncontrado, new Exception($"Não foi encontrado nenhum registro com os seguintes dados: {username}"));
 
             var usuario = Context.TB_USUARIOS
                 .SingleOrDefault(x => x.DS_USERNAME == username && x.DS_PASSWORD == password);
 
             if (usuario == null)
-                throw new SegurancaException("Usuario não encontrado.", new Exception($"Não foi encontrado nenhum registro com os seguintes dados: {username}"));
+                throw new SegurancaException(ExceptionMessages.UsuarioNaoEncontrado, new Exception($"Não foi encontrado nenhum registro com os seguintes dados: {username}"));
 
             var roles = Context.RL_USUARIO_ROLE
                 .Include(x => x.TB_ROLES)

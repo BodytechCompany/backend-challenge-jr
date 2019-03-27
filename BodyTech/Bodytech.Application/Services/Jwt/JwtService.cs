@@ -65,7 +65,7 @@ namespace Bodytech.Application.Services.Jwt
             }
             else
             {
-                throw new Exception("Token inválido.");
+                throw new Exception(ExceptionMessages.TokenInvalido);
             }
         }
 

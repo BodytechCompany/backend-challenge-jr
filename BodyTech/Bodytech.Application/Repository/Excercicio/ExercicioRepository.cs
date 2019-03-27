@@ -21,7 +21,7 @@ namespace Bodytech.Application.Repository.Excercicio
         {
             var existemOrdem = Context.TB_EXERCICIOS.Any(x => x.FK_ALUNO_ID == entity.FK_ALUNO_ID && x.NUM_ORDEM == entity.NUM_ORDEM);
             if (existemOrdem)
-                throw new Exception(ExceptionMessages.OrdemJaCadastrada);
+                throw new Exception(Messages.OrdemJaCadastrada);
 
             var exercicio = Context.TB_EXERCICIOS.Add(entity);
             Context.SaveChanges();
@@ -52,7 +52,7 @@ namespace Bodytech.Application.Repository.Excercicio
         {
             var exercicio = Context.TB_EXERCICIOS.SingleOrDefault(x => x.EXERCICIO_ID == Id);
             if (exercicio == null)
-                throw new Exception("Exercicio não encontrado.");
+                throw new Exception(ExceptionMessages.ExercicioNaoEncontrado);
 
             return exercicio;
         }
@@ -66,7 +66,7 @@ namespace Bodytech.Application.Repository.Excercicio
         {
             var exercicio = Context.TB_EXERCICIOS.SingleOrDefault(x => x.EXERCICIO_ID == entity.EXERCICIO_ID);
             if (exercicio == null)
-                throw new Exception("Exercício para este usuário não encontrado.");
+                throw new Exception(ExceptionMessages.ExercicioParaUsuarioNaoEncontrado);
 
             var existeExercicioComOrdem = Context.TB_EXERCICIOS.FirstOrDefault(x => x.FK_ALUNO_ID == entity.FK_ALUNO_ID && x.NUM_ORDEM == entity.NUM_ORDEM);
             if (existeExercicioComOrdem != null)
@@ -99,13 +99,13 @@ namespace Bodytech.Application.Repository.Excercicio
             var ordem = entity.Select(x => x.NUM_ORDEM).ToArray();
             var agruparOrdem = ordem.GroupBy(x => x);
             if (agruparOrdem.Any(x => x.Count() > 1))
-                throw new Exception("Numero de ordem não pode se repetir.");
+                throw new Exception(ExceptionMessages.OrdemRepetida);
 
             var idAluno = entity.First().FK_ALUNO_ID;
             var existeOrdem = Context.TB_EXERCICIOS.Any(x => x.FK_ALUNO_ID == idAluno && ordem.Contains(x.NUM_ORDEM));
 
             if (existeOrdem)
-                throw new Exception("Número de ordem já cadastrado.");
+                throw new Exception(Messages.OrdemJaCadastrada);
 
             entity = Context.TB_EXERCICIOS.AddRange(entity);
             Context.SaveChanges();
@@ -117,7 +117,7 @@ namespace Bodytech.Application.Repository.Excercicio
         {
             var exercicio = Context.TB_EXERCICIOS.SingleOrDefault(x => x.EXERCICIO_ID == id);
             if (exercicio == null)
-                throw new Exception("Exercicio não encontrado.");
+                throw new Exception(ExceptionMessages.ExercicioNaoEncontrado);
 
             exercicio.NUM_CARGA = carga;
             Context.SaveChanges();

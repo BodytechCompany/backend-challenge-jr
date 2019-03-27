@@ -8,5 +8,6 @@ namespace Bodytech.Application.Common.Const
     public class Messages
     {
         public const string OperacaoSucesso = "Operação realizada com sucesso.";
+        public const string OrdemJaCadastrada = "Número de ordem já cadastrado.";
     }
 }

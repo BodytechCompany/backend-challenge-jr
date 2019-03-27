@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bodytech.Application.Common.Const;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -25,7 +26,7 @@ namespace Bodytech.Application.Repository.Roles
         {
             var role = Context.TB_ROLES.SingleOrDefault(x => x.ROLE_ID == Id);
             if (role == null)
-                throw new Exception("Role não cadastrada.");
+                throw new Exception(ExceptionMessages.RoleNaoCadastrada);
 
             Context.TB_ROLES.Remove(role);
             Context.SaveChanges();
@@ -45,7 +46,7 @@ namespace Bodytech.Application.Repository.Roles
         {
             var role = Context.TB_ROLES.SingleOrDefault(x => x.ROLE_ID == entity.ROLE_ID);
             if (role == null)
-                throw new Exception("Role não cadastrada.");
+                throw new Exception(ExceptionMessages.RoleNaoCadastrada);
 
             role.DS_ROLE = entity.DS_ROLE;
             Context.SaveChanges();

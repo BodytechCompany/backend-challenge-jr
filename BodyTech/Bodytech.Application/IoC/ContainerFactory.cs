@@ -15,6 +15,9 @@ using System.Web.Http;
 
 namespace Bodytech.Application.IoC
 {
+    /// <summary>
+    /// ContainerFactory Registra todas as referencias, as dependencias 
+    /// </summary>
     public static class ContainerFactory
     {
         public static IContainer GetContainer()

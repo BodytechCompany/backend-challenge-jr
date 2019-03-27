@@ -37,7 +37,7 @@ namespace Bodytech.Application.Controllers
             }
             else
             {
-                return Request.CreateResponse(HttpStatusCode.Unauthorized, new { ErrorMessage = "Somente professores tem permissão de pesquisa de alunos." });
+                return Request.CreateResponse(HttpStatusCode.Unauthorized, new { ErrorMessage = ExceptionMessages.PesquisarAluno });
             }
         }
     }

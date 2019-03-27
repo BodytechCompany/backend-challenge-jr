@@ -36,7 +36,7 @@ namespace Bodytech.Application.Controllers
             else
             {
                 if (idAluno.ToString() != tokenModel.UserId)
-                    return Request.CreateResponse(HttpStatusCode.Unauthorized, new { ErrorMessage = "Você não pode ver os exercicios de outros alunos." });
+                    return Request.CreateResponse(HttpStatusCode.Unauthorized, new { ErrorMessage = ExceptionMessages.PermissaoConsultarExercicioOutroAluno });
 
                 return Request.CreateResponse(HttpStatusCode.OK, exercicio);
             }
@@ -69,7 +69,7 @@ namespace Bodytech.Application.Controllers
             }
             else
             {
-                throw new Exception("Você não tem permissão para cadastrar exercicio.");
+                throw new Exception(ExceptionMessages.PermissaoCadastrarExercicio);
             }
         }
 
@@ -101,7 +101,7 @@ namespace Bodytech.Application.Controllers
             else
             {
                 if (model.Carga <= 0)
-                    throw new Exception("O valor da carga deve ser maior do 0.");
+                    throw new Exception(ExceptionMessages.CargaValor);
 
                 exercicioRepository.AtualizarCarga(model.IdExercicio, model.Carga);
             }
@@ -120,7 +120,7 @@ namespace Bodytech.Application.Controllers
                 return Request.CreateResponse(HttpStatusCode.OK, Messages.OperacaoSucesso);
             }
             else
-                throw new Exception("Somente um professor pode apagar o exercicio.");
+                throw new Exception(ExceptionMessages.PermissaoDeletarExercicio);
         }
     }
 }
