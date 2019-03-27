@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bodytech.Application", "Bodytech.Application\Bodytech.Application.csproj", "{E1BE72D1-C8F2-4E2B-92A7-1BDF8A0D53B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1BE72D1-C8F2-4E2B-92A7-1BDF8A0D53B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1BE72D1-C8F2-4E2B-92A7-1BDF8A0D53B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1BE72D1-C8F2-4E2B-92A7-1BDF8A0D53B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1BE72D1-C8F2-4E2B-92A7-1BDF8A0D53B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29189B6C-1BE3-4670-B10E-36AF9EF2FDD5}
+	EndGlobalSection
+EndGlobal
